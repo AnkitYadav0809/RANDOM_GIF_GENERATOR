@@ -4,23 +4,7 @@ import Spinner from "./Spinner";
 const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
 const Random = () => {
-  // const [gif, setGif] = useState("");
-  // const [loading, setLoading] = useState(false);
-
-  // async function fetchData() {
-  //   setLoading(true)
-  //   const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-
-  //   const { data } = await axios.get(url);
-  //   const imageSource = data.data.images.downsized_large.url;
-  //   setGif(imageSource);
-  //   console.log(imageSource);
-  //   setLoading(false);
-  // }
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
+ 
 
   const { gif, loading, fetchData } = useGif();
 
